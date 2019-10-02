@@ -48,7 +48,3 @@ X|X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 Y|Y Z A B C D E F G H I J K L M N O P Q R S T U V W X 
 Z|Z A B C D E F G H I J K L M N O P Q R S T U V W X Y 
 ```
-
-## Notes
-
-Why "Mr. Vigenère"? A former colleague had the practice of naming internal tools he wrote "Mr. Such-and-such", so it's an homage to him.
