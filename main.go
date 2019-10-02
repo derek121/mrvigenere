@@ -10,6 +10,11 @@ import (
 //https://en.wikipedia.org/wiki/Vigenère_cipher
 
 func main() {
+	if len(os.Args) == 2 && os.Args[1] == "--usage" {
+		usage()
+		os.Exit(0)
+	}
+
 	if len(os.Args) == 2 && os.Args[1] == "--printtable" {
 		table := make_table()
 		print_table(table)
@@ -17,7 +22,8 @@ func main() {
 	}
 
 	if len(os.Args) != 4 {
-		log.Fatalf("usage args: {{--encode|--decode} key message} | {--printtable}")
+		usage()
+		os.Exit(1)
 	}
 
 	table := make_table()
@@ -110,4 +116,8 @@ func print_col_header() {
 		fmt.Printf("-")
 	}
 	fmt.Println()
+}
+
+func usage() {
+	log.Printf("usage args: {{--encode|--decode} key message} | --printtable | --usage")
 }
