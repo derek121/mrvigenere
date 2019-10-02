@@ -15,7 +15,7 @@ $ go run main.go --usage
 $
 $ go run main.go --encode LEMON ATTACKATDAWN
 LXFOPVEFRNHR
-$ go run main.go --decode LEMON FHHFQYFHRFKB
+$ go run main.go --decode LEMON LXFOPVEFRNHR
 ATTACKATDAWN
 $
 $ go run main.go --printtable
